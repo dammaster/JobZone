@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+    <include layout="@layout/toolbar"/>
+
+
+
+
+        >
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="55dp"
+        android:id="@+id/map"
+        tools:context=".mapUni"
+
+        map:mapType="normal"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            >
+
+            <TextView
+                android:id="@+id/locate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="locate"
+                android:visibility="gone"
+                android:textSize="14dp"
+                />
+
+            <TextView
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="date"
+                android:textAllCaps="true"
+                android:textSize="14dp"
+                android:id="@+id/date"/>
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="category"
+        android:textStyle="bold"
+        android:textColor="#202020"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:id="@+id/detailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="detail"
+        android:textSize="16dp"
+        />
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="money"
+        android:textColor="#202020"
+        android:textStyle="italic"
+        android:textSize="16dp"
+        />
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textSize="14dp"
+                android:textStyle="italic"
+
+                />
+
+
+
+    <TextView
+        android:paddingTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send_a_Message"
+        android:textStyle="italic"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        />
+
+
+
+
+
+
+    <Button
+        android:id="@+id/btnSendSMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:background="#6d84b4"
+        android:layout_marginTop="15dp"
+        android:textColor="#fff"
+        android:text="@string/send"
+        />
+
+        </LinearLayout>
+</LinearLayout>
+
+    </ScrollView>
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="?android:attr/windowBackground"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/navigation"
+        app:itemIconTint="@android:color/tab_indicator_text"
+        app:itemTextColor="@android:color/tab_indicator_text"/>
+
+
+
+</RelativeLayout>

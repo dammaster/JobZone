@@ -1,0 +1,35 @@
+<resources>
+
+    <style name="MaterialTheme" parent="ParentMaterialTheme">
+
+
+    </style>
+
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+
+    </style>
+
+
+    <style name="PopupTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:background">#3b5998</item>
+
+
+    </style>
+
+
+    <!-- Base application theme. -->
+    <style name="ParentMaterialTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#3b5998</item>
+        <item name="colorPrimaryDark">#3b5998</item>
+        <item name="colorAccent">#afbdd4</item>
+
+
+
+    </style>
+
+</resources>

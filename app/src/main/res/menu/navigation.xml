@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_offer"
+        android:enabled="true"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="@string/search_job"
+        app:showAsAction="always"/>
+
+
+    <item
+        android:id="@+id/navigation_demand"
+        android:enabled="true"
+        android:icon="@drawable/ic_list_white_24dp"
+        android:title="@string/demand"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/navigation_map"
+        android:enabled="true"
+        android:icon="@drawable/ic_place_white_24dp"
+        android:title="@string/job_places"
+        app:showAsAction="always"/>
+
+</menu>
